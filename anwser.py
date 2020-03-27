@@ -1,9 +1,9 @@
 distancia = int(input("distancia a recorrer: "))
-tipo = int(input("nacional(1) internacional(2)"))
+tipo = int(input("nacional(1) internacional(2): "))
 pesoT=0
 
 while (pesoT<337250):
-    peso = int(input("Peso de equipaje: "))
+    peso = int(input("Peso del equipaje: "))
     pesoT=pesoT+peso
     if (peso<10):
         print("El peso no es aceptable")
@@ -23,6 +23,7 @@ while (pesoT<337250):
             elif(distancia>8000 and tipo==2 and peso>400):
                 valorT=valorT*0.9
 
+print("Peso Total: ",pesoT)
 print("Valor Total: ",valorT)
 
 
